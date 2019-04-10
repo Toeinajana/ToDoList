@@ -2,6 +2,7 @@ body {
     margin: 0;
     min-width: 250px;
     background: url(../img/pnkBG.jpg);
+    font-family: monospace;
   }
   
   /* Include the padding and border in an element's total width and height */
@@ -93,11 +94,12 @@ body {
   /* Style the header */
   .header {
     background-color: #f74d8e;
-    padding: 30px 40px;
+    padding: 20px 40px;
     color: white;
     text-align: center;
     width: 50%;
     margin: auto;
+    /* opacity: 0.6; */
   }
   
   /* Clear floats after the header */
@@ -109,7 +111,7 @@ body {
   
   /* Style the input */
   input {
-    margin: 0;
+    margin: auto;
     border: none;
     border-radius: 0;
     width: 75%;
@@ -138,9 +140,11 @@ body {
 
 
 
-  span{
+  .imgcenter{
 
     display: inline-block;
+    text-align: center;
+    width: 100%;
   
   }
   img{
@@ -151,8 +155,66 @@ body {
   width: 142px;;
   height:200px; */
 
-  width: 40%;
+  width: 20%;
   margin-left: auto;
   margin-right: auto;
   
+  
   }
+
+  .centerbar{
+      
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .con{
+
+
+    margin: auto;
+
+  }
+
+  .imgcen{
+
+    margin-bottom: 10px;
+
+  }
+
+  .typewriter h1 {
+    font-family: monospace; /* Web-safe typewriter-like font */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 10 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: 
+      typing 7s steps(30, end)infinite,
+      blinking-cursor .5s step-end infinite;
+      
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 80% }
+    
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blinking-cursor {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }
+
+  /* .typingcon{
+
+
+    text-align: center;
+
+  } */
